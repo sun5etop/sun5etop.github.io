@@ -4,12 +4,70 @@
 
 # Site
 title: YBLOG
-subtitle: ''
 description: '欢迎来到此处~'
 keywords:
 author: Young
 language: zh-CN
 timezone: ''
+
+
+nav:
+  display_title: true
+  fixed: false # fixed navigation bar    
+menu:
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单||fa fa-heartbeat:
+    音乐: /music/ || fas fa-music
+    照片: /Gallery/ || fas fa-images
+#顶部图
+index_img: /image/hih.jpg
+default_top_img: /image/hih.jpg
+index_top_img_height: 400px #顶部图高度
+#头像
+avatar:
+  img: /image/mrx.jpg
+runtimeshow:
+  enable: true
+  publish_date: 1/4/2024 00:00:00
+#本地搜索
+local_search:
+  enable: true
+  # Preload the search data when the page loads.
+  preload: false
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: true
+  CDN:
+favicon: /image/星.png
+
+# 主页subtitle
+subtitle:
+  enable: true
+  # Typewriter Effect (打字效果)
+  effect: true
+  startDelay: 300 # time before typing starts in milliseconds
+  typeSpeed: 200 # type speed in milliseconds
+  backSpeed: 800 # backspacing speed in milliseconds
+  # loop (循环打字)
+  loop: true
+  # source 调用三方服务
+  # source: false 开关调用
+  # subtitle 会先显示 source , 再显示 sub 的內容
+  source: true
+  # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
+  sub:
+    - 只是为什么 &#44; 眼泪会流我也不懂
+    - 再次温柔 &#44; 不愿看到你那保持的沉默
+
+#加载动画
+preloader:
+  enable: true
+  source: 1 #可选值1=fullpage或2=progress bar，可查看https://codebyzach.github.io/pace/
+  pace_css_url:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -40,7 +98,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
